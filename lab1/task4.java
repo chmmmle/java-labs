@@ -34,5 +34,6 @@ public static void main(String[] args) {
         
         // Выводим номер дороги и максимальную минимальную высоту
         System.out.println(bestRoad + " " + maxHeight);
+        scanner.close();
     }
 }
