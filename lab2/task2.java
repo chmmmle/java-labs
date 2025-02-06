@@ -35,8 +35,6 @@ public class Sorted {
         int[] array2 = {2, 4, 7, 8};
         
         int[] mergedArray = SortedArrays(array1, array2);
-        
-        // Вывод объединенный массив
         System.out.println(Arrays.toString(mergedArray));
     }
 }
