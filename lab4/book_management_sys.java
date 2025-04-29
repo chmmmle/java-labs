@@ -39,7 +39,6 @@ class Library {
     }
 
     public void displayBooks() {
-        //List<Books> boks=(this.books);
         for (Book book : books) {
             System.out.println("Title: " + book.title);
             System.out.println("Author: " + book.author);
@@ -50,7 +49,6 @@ class Library {
     }
 
     public void displayBooksByAuthor(String au) {
-        //List<Books> boks=(this.books);
         boolean found=false;
         for (Book book : books) {
             if (book.author.equals(au))
@@ -69,7 +67,6 @@ class Library {
     }
 
     public void displayBooksByYear(int yee) {
-        //List<Books> boks=(this.books);
         for (Book book : books) {
             if(book.year==yee)
             {
@@ -90,7 +87,6 @@ class Library {
     }
 
     public void displayStatisticsByAuthor() {
-        //List<Books> boks=(this.books);
         for (String auu : unique_authors) {
             int counter=0;
             for (Book book : books) {
@@ -143,7 +139,7 @@ public class Main {
                 library.addBook(new Book(title, author, hash, year));
 
             } else if (choice == 2) {
-                scanner.nextLine(); // to consume the newline character
+                scanner.nextLine(); 
                 System.out.print("Enter hash: ");
                 String hash = scanner.nextLine();
                 library.removeBook(hash);
