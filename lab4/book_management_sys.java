@@ -29,7 +29,6 @@ class Library {
     }
 
     public void removeBook(String hash) {
-        //List<Books> boks=(this.books);
         for (Book book : books) {
             if (book.hash.equals(hash)) {
                 books.remove(book);
